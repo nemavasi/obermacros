@@ -8,7 +8,7 @@
                 <td style="padding-left: 7px; font-size: 12pt;" valign="top">
 
                     <div id="canvas"></div>
-                    <div id="log" style="font-family: monospace;">42</div>
+                    <div id="log" style="font-family: monospace;"></div>
 
                 </td>
 
@@ -33,15 +33,12 @@
                 </p>
 
                 <div class="code">
-                <textarea id="source" rows="10" cols="80">
-                (*
+                <textarea id="source" rows="10" cols="80 style="white-space: pre-line">
                 MODULE test;
                 IMPORT JS;
                 BEGIN
                     JS.alert("Hello, World!")
                 END test.
-                *)
-                $body
                 </textarea>
                 </div>
 
