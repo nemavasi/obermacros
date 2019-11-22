@@ -88,13 +88,18 @@
   </dependencies>
 
   <build>
+
+
     <plugins>
+
       <plugin>
         <groupId>com.atlassian.maven.plugins</groupId>
         <artifactId>maven-confluence-plugin</artifactId>
         <version>${amps.version}</version>
         <extensions>true</extensions>
+
         <configuration>
+          <compressResources>false</compressResources>
           <productVersion>${confluence.version}</productVersion>
           <productDataVersion>${confluence.data.version}</productDataVersion>
           <enableQuickReload>true</enableQuickReload>
@@ -159,5 +164,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+
+    <atlassian.dev.mode>false</atlassian.dev.mode>
+    <atlassian.webresource.disable.minification>true</atlassian.webresource.disable.minification>
+
   </properties>
 </project>
