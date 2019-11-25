@@ -4,7 +4,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>nemavasi.confluence</groupId>
   <artifactId>obermacros</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+<!--  <version>0.1.0-SNAPSHOT</version>-->
+  <version>${project.version}</version>
   <organization>
     <name>Dmitry Shalygin</name>
     <url>https://modela.online</url>
@@ -168,7 +169,7 @@
     <atlassian.dev.mode>false</atlassian.dev.mode>
     <atlassian.webresource.disable.minification>true</atlassian.webresource.disable.minification>
 
-    <project.version>0.9.0</project.version>
+    <project.version>0.2.0</project.version>
     <project.description>This Plugin enables creating Oberon-07 macro within Confluence</project.description>
     <project.organization.name>Dmitry Shalygin</project.organization.name>
     <project.organization.url>https://modela.online</project.organization.url>
