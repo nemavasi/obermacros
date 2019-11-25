@@ -26,6 +26,7 @@
                     </form>
                 </p>
 
+                <button type="button" class="collapsible">OPEN SOURCE CODE</button>
                 <div class="code">
                     <textarea id="source" rows="10" cols="80">__MY_CODE__</textarea>
                 </div>
@@ -38,12 +39,13 @@
                 <p id="compileErrors" style="color:red"></p>
                 <p id="compileTime"></p>
 
-                <div class="code">
-                <textarea id="result" rows="10" cols="80">
-                </textarea>
+                <button type="button" class="collapsible">OPEN COMPILED CODE</button>
+                <div class="code" style="display: none;">
+                    <textarea id="result" rows="10" cols="80">
+                    </textarea>
                 </div>
-                    <p><button onclick="run()">Run</button></p>
-                    <p><button onclick="run_tests()">Run Tests</button></p>
+                <p><button onclick="run()">Run</button></p>
+                <p><button onclick="run_tests()">Run Tests</button></p>
                 <p id="runErrors" style="color:red"></p>
                 <p id="runTime"></p>
                 <p id="testsResult"></p>
@@ -143,7 +145,8 @@
 
                 </script>
 
-                <div id="links">
+                <button type="button" class="collapsible">OPEN HELP</button>
+                <div id="links" style="display: none;">
                     <br> <br>
                     Oberon is a trademark of Prof.Niklaus Wirth.<br>
                     All trademarks are the property of their respective owners
@@ -177,3 +180,25 @@
                     <p><a href="https://oberoncore.ru/">https://oberoncore.ru/</a></p>
 
                 </div>
+
+                <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].style.width = "100%";
+                  coll[i].style.padding = "18px";
+                  coll[i].style.border = "none";
+                  coll[i].style.textAlign = "left";
+                  coll[i].style.outline = "none";
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+                </script>
