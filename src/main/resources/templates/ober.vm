@@ -44,8 +44,10 @@
                     <textarea id="result" rows="10" cols="80">
                     </textarea>
                 </div>
-                <p><button onclick="run()">Run</button></p>
-                <p><button onclick="run_tests()">Run Tests</button></p>
+                <p>
+                    <button onclick="run()">Run</button>
+                    <button onclick="run_tests()">Run Tests</button>
+                </p>
                 <p id="runErrors" style="color:red"></p>
                 <p id="runTime"></p>
                 <p id="testsResult"></p>
@@ -151,17 +153,20 @@
                     Oberon is a trademark of Prof.Niklaus Wirth.<br>
                     All trademarks are the property of their respective owners
                     <br> About the programming language Oberon-07: <br>
-                    <p><a href="https://inf.ethz.ch/personal/wirth/Oberon/Oberon07.Report.pdf">eng (pdf)</a></p>
-                    <p><a href="https://modela.online/oberon">rus</a></p>
+                    <p>
+                        <a href="https://inf.ethz.ch/personal/wirth/Oberon/Oberon07.Report.pdf">eng (pdf)</a>
+                        &nbsp; &nbsp;
+                        <a href="https://modela.online/oberon">rus</a>
+                    </p>
 
                     <br> About base modules: <br>
                     <p>
                         <a href="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/modules/Math.Mod.txt">Math.Mod</a>
-                        <br>
+                        &nbsp; &nbsp;
                         <a href="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/modules/Strings.Mod.txt">Strings.Mod</a>
-                        <br>
+                        &nbsp; &nbsp;
                         <a href="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/modules/Log.Mod.txt">Log.Mod</a>
-                        <br>
+                        &nbsp; &nbsp;
                         <a href="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/modules/Draw.Mod.txt">Draw.Mod</a>
                      </p>
 
@@ -172,8 +177,11 @@
                     <p><a href="https://modela.online">https://modela.online</a></p>
 
                     <br> Forums:  <br>
-                    <p><a href="http://www.ocp.inf.ethz.ch/forum/">eng</a></p>
-                    <p><a href="https://forum.oberoncore.ru">rus</a></p>
+                    <p>
+                        <a href="http://www.ocp.inf.ethz.ch/forum/">eng</a>
+                        &nbsp;
+                        <a href="https://forum.oberoncore.ru">rus</a>
+                    </p>
 
                     <br> Other links:  <br>
                     <p><a href="http://www.ocp.inf.ethz.ch/wiki/">Oberon Community Platform</a></p>
