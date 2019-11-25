@@ -128,7 +128,11 @@
                 </script>
 
                 <div id="links">
-                    <p><a href="http://oberspace.dyndns.org">http://oberspace.dyndns.org</a></p>
-                    <p><a href="https://github.com/vladfolts/oberonjs">https://github.com/vladfolts/oberonjs</a></p>
-                    <p><a href="https://modela.online">https://modela.online</a></p>
+                    <br> <br>
+                    Language descriptions:
+                    <br>
+                    <p><a href="https://inf.ethz.ch/personal/wirth/Oberon/Oberon07.Report.pdf">english (pdf)</a></p>
+                    <p><a href="https://modela.online/oberon">russian description</a></p>
+                    <p><a href="https://github.com/vladfolts/oberonjs">Compiler info: https://github.com/vladfolts/oberonjs</a></p>
+                    <p><a href="https://modela.online">More models: https://modela.online</a></p>
                 </div>
