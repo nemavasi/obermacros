@@ -6,8 +6,8 @@
   <artifactId>obermacros</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <organization>
-    <name>Example Company</name>
-    <url>http://www.example.com/</url>
+    <name>Dmitry Shalygin</name>
+    <url>https://modela.online</url>
   </organization>
   <name>obermacros</name>
   <description>obermacros</description>
@@ -168,5 +168,9 @@
     <atlassian.dev.mode>false</atlassian.dev.mode>
     <atlassian.webresource.disable.minification>true</atlassian.webresource.disable.minification>
 
+    <project.version>0.9.0</project.version>
+    <project.description>This Plugin enables creating Oberon-07 macro within Confluence</project.description>
+    <project.organization.name>Dmitry Shalygin</project.organization.name>
+    <project.organization.url>https://modela.online</project.organization.url>
   </properties>
 </project>
