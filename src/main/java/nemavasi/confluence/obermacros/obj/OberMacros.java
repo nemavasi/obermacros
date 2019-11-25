@@ -6,6 +6,7 @@ import com.atlassian.confluence.macro.MacroExecutionException;
 import com.atlassian.confluence.setup.BootstrapManager;
 import com.atlassian.plugin.spring.scanner.annotation.imports.ComponentImport;
 import com.atlassian.webresource.api.assembler.PageBuilderService;
+import nemavasi.confluence.obermacros.api.WithBaseModules;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -16,7 +17,7 @@ import java.io.InputStreamReader;
 import java.util.Map;
 
 @Named
-public class OberMacros implements Macro {
+public class OberMacros implements Macro, WithBaseModules {
 
     private PageBuilderService pageBuilderService;
     private  BootstrapManager bootstrapManager;
@@ -28,22 +29,22 @@ public class OberMacros implements Macro {
     }
 
     @Override
-    public String execute(Map<String, String> map, String body, ConversionContext conversionContext) throws MacroExecutionException {
+    public String getBaseModulesSourceText() {
 
-        pageBuilderService.assembler().resources().requireWebResource("nemavasi.confluence.obermacros:ober-macro");
-
-        StringBuilder output = new StringBuilder();
-        InputStream is = OberMacros.class.getClassLoader().getResourceAsStream("templates/ober.vm");
         InputStream modMath = OberMacros.class.getClassLoader().getResourceAsStream("modules/Math.Mod");
         InputStream modString = OberMacros.class.getClassLoader().getResourceAsStream("modules/Strings.Mod");
         InputStream modLog = OberMacros.class.getClassLoader().getResourceAsStream("modules/Log.Mod");
         InputStream modDraw = OberMacros.class.getClassLoader().getResourceAsStream("modules/Draw.Mod");
 
+        StringBuilder output = new StringBuilder();
+
         try (BufferedReader buffer = new BufferedReader(new InputStreamReader(modMath))) {
             String strCurrentLine;
             while ((strCurrentLine = buffer.readLine()) != null) {
                 output.append(strCurrentLine);
+                output.append("\n");
             }
+            output.append("\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -52,7 +53,9 @@ public class OberMacros implements Macro {
             String strCurrentLine;
             while ((strCurrentLine = buffer.readLine()) != null) {
                 output.append(strCurrentLine);
+                output.append("\n");
             }
+            output.append("\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -61,7 +64,9 @@ public class OberMacros implements Macro {
             String strCurrentLine;
             while ((strCurrentLine = buffer.readLine()) != null) {
                 output.append(strCurrentLine);
+                output.append("\n");
             }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -70,10 +75,24 @@ public class OberMacros implements Macro {
             String strCurrentLine;
             while ((strCurrentLine = buffer.readLine()) != null) {
                 output.append(strCurrentLine);
+                output.append("\n");
             }
+            output.append("\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        return output.toString();
+    }
+
+    @Override
+    public String execute(Map<String, String> map, String body, ConversionContext conversionContext) throws MacroExecutionException {
+
+        pageBuilderService.assembler().resources().requireWebResource("nemavasi.confluence.obermacros:ober-macro");
+
+        StringBuilder output = new StringBuilder();
+        InputStream is = OberMacros.class.getClassLoader().getResourceAsStream("templates/ober.vm");
+
 
         try (BufferedReader buffer = new BufferedReader(new InputStreamReader(is))) {
             String strCurrentLine;
@@ -97,9 +116,9 @@ public class OberMacros implements Macro {
             "END test.\n"
             ;
         }
+        body = getBaseModulesSourceText() + body;
         result = result.replace("__MY_CODE__", body);
 
-        result = modMath + "\n" + modString + "\n" + modLog + "\n" + modDraw + "\n" + result;
 //        Integer width, height;
 //        try {
 //            width = Integer.valueOf(map.get("width"));

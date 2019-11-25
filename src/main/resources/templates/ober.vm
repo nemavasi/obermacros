@@ -66,6 +66,22 @@
 
                     function compile(){
                         var src = oberonEditor.getValue();
+
+                        AJS.$.ajax({
+                            type:   "get",
+                            dataType: "text",
+                            async: false,
+                            url:    "__ATLASSIAN_BASE_URL__/rest/obermacros_plugin/1.0/obermacros/base_modules_text",
+                            success: function(data) {
+                                src = data + src;
+                            },
+                            error: function(xhr, ajaxOptions, thrownError) {
+                                console.log("error of reading base modules!" + thrownError);
+                            },
+                            complete: function() {
+                            },
+                        });
+
                         var result;
                         var errors = "";
                         var start = new Date();
