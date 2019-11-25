@@ -28,6 +28,12 @@
         <resource type="download" name="js/jslibs/codemirror/javascript.js" location="js/jslibs/codemirror/javascript.js"/>
         <resource type="download" name="js/jslibs/processing/processing.js" location="js/jslibs/processing/processing.js"/>
 
+        <resource type="download" name="modules/Math.Mod.txt" location="modules/Math.Mod"/>
+        <resource type="download" name="modules/Strings.Mod.txt" location="modules/Strings.Mod"/>
+        <resource type="download" name="modules/Log.Mod.txt" location="modules/Log.Mod"/>
+        <resource type="download" name="modules/Draw.Mod.txt" location="modules/Draw.Mod"/>
+
+
         <context>obermacros</context>
     </web-resource>
 

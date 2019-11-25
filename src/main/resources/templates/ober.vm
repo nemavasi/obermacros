@@ -151,6 +151,17 @@
                     <p><a href="https://inf.ethz.ch/personal/wirth/Oberon/Oberon07.Report.pdf">eng (pdf)</a></p>
                     <p><a href="https://modela.online/oberon">rus</a></p>
 
+                    <br> About base modules: <br>
+                    <p>
+                        <a href="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/modules/Math.Mod.txt">Math.Mod</a>
+                        <br>
+                        <a href="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/modules/Strings.Mod.txt">Strings.Mod</a>
+                        <br>
+                        <a href="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/modules/Log.Mod.txt">Log.Mod</a>
+                        <br>
+                        <a href="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/modules/Draw.Mod.txt">Draw.Mod</a>
+                     </p>
+
                     <br> About compiler: <br>
                     <p><a href="https://github.com/vladfolts/oberonjs">Compiler info: https://github.com/vladfolts/oberonjs</a></p>
 
