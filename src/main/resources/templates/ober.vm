@@ -26,7 +26,7 @@
                     </form>
                 </p>
 
-                <button type="button" class="collapsible">OPEN SOURCE CODE</button>
+                <button type="button" class="collapsible"> > OPEN SOURCE CODE</button>
                 <div class="code">
                     <textarea id="source" rows="10" cols="80">__MY_CODE__</textarea>
                 </div>
@@ -39,7 +39,7 @@
                 <p id="compileErrors" style="color:red"></p>
                 <p id="compileTime"></p>
 
-                <button type="button" class="collapsible">OPEN COMPILED CODE</button>
+                <button type="button" class="collapsible"> > OPEN COMPILED CODE</button>
                 <div class="code" style="display: none;">
                     <textarea id="result" rows="10" cols="80">
                     </textarea>
@@ -147,7 +147,7 @@
 
                 </script>
 
-                <button type="button" class="collapsible">OPEN HELP</button>
+                <button type="button" class="collapsible"> > OPEN HELP</button>
                 <div id="links" style="display: none;">
                     <br> <br>
                     Oberon is a trademark of Prof.Niklaus Wirth.<br>
@@ -194,19 +194,30 @@
                 var i;
 
                 for (i = 0; i < coll.length; i++) {
-                  coll[i].style.width = "100%";
-                  coll[i].style.padding = "18px";
-                  coll[i].style.border = "none";
-                  coll[i].style.textAlign = "left";
-                  coll[i].style.outline = "none";
-                  coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                      content.style.display = "none";
-                    } else {
-                      content.style.display = "block";
-                    }
-                  });
+
+                    coll[i].style.width = "100%";
+                    coll[i].style.padding = "10px";
+                    coll[i].style.border = "none";
+                    coll[i].style.textAlign = "left";
+                    coll[i].style.outline = "none";
+                    coll[i].style.backgroundColor = "rgb(247, 220, 111)";
+                    coll[i].onmouseover = function()
+                    {
+                        this.style.backgroundColor = "rgb(241, 196, 15)";
+                    };
+                    coll[i].onmouseout = function()
+                    {
+                        this.style.backgroundColor = "rgb(247, 220, 111)";
+                    };
+
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                          content.style.display = "none";
+                        } else {
+                          content.style.display = "block";
+                        }
+                    });
                 }
                 </script>
