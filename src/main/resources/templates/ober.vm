@@ -6,10 +6,8 @@
                 <script src="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/js/codemirror/oberon07.js"></script>
 
                 <td style="padding-left: 7px; font-size: 12pt;" valign="top">
-
                     <div id="canvas"></div>
                     <div id="log" style="font-family: monospace;"></div>
-
                 </td>
 
                 <p>

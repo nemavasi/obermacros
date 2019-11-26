@@ -50,8 +50,7 @@
     <xhtml-macro name="obermacros" class="nemavasi.confluence.obermacros.obj.OberMacros" key="ober-macro">
         <description key="obermacros.description.desc">It enables creating Oberon-07 macro within Confluence</description>
         <parameters>
-            <parameter name="width" type="int" />
-            <parameter name="height" type="int" />
+            <parameter name="comment" type="string" />
 <!--            <parameter name="Color" type="enum">-->
 <!--                <value name="red"/>-->
 <!--                <value name="green"/>-->
