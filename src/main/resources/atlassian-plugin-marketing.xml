@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<atlassian-plugin-marketing>
+    <!--Describe names and versions of compatible products -->
+    <compatibility>
+        <product name="confluence" min="6.11.0" max="6.11.0"/>
+    </compatibility>
+    <!-- Describe your app logo and banner. The banner is only displayed in the UPM. -->
+    <!--    App logo    144x144px PNG/JPG Reference your app logo. Use transparent or bounded, chiclet-style backgrounds.
+     Marketplace automatically creates an app icon from your logo.-->
+    <logo image="images/01_logo.jpg"/>
+    <!--   App banner 1120x548px PNG/JPG Include your app name, your vendor name, and brief text about your app's
+     functionality. Users see this banner displayed in the UPM when they browse the Marketplace from their Atlassian host product.-->
+    <banner image="images/02_banner.jpg"/>
+    <!-- Describe highlight and cropped highlight image assets, in order. -->
+<!--    Highlight images-->
+<!--    1840x900px PNG/JPG (full size)-->
+<!--    580x330px PNG/JPG (cropped)-->
+<!--    Full-size: Illustrate your highlight with a screenshot. High-definition display screenshots encouraged.-->
+<!--    Cropped: Provide a cropped version of your screenshot. This image is displayed prominently on the app details page.-->
+    <highlights>
+        <highlight image="images/03_highlight1_ss.jpg" cropped="images/04_highlight1_cropped.jpg"/>
+        <highlight image="images/05_highlight2_ss.jpg" cropped="images/06_highlight2_cropped.jpg"/>
+        <highlight image="images/07_highlight3_ss.jpg" cropped="images/08_highlight3_cropped.jpg"/>
+    </highlights>
+    <!-- Describe additional screenshots you'd like listed on your app listing. -->
+<!--    Additional screenshots-->
+<!--    1840x900px PNG/JPG-->
+<!--    Provide additional screenshots to help illustrate your app's capabilities.-->
+<!--    Copy-->
+
+    <screenshots>
+        <screenshot image="images/09_addl_ss1.jpg"/>
+        <screenshot image="images/10_addl_ss2.jpg"/>
+        <screenshot image="images/11_addl_ss3.jpg"/>
+    </screenshots>
+</atlassian-plugin-marketing>

@@ -3,8 +3,29 @@
         <description>${project.description}</description>
         <version>${project.version}</version>
         <vendor name="${project.organization.name}" url="${project.organization.url}" />
+
+
+<!--        https://developer.atlassian.com/platform/marketplace/declaring-marketing-assets-for-server-apps/-->
+
         <param name="plugin-icon">images/pluginIcon.png</param>
+
+<!--        App banner -->
+<!--        1120 x 548px  PNG/JPG-->
+<!--        <param name="plugin-banner">images/pluginBanner.jpg</param>-->
+
+<!--        Include your app name, your vendor name, and brief text about your app's functionality.
+     Users see this banner displayed in the UPM when they browse the Marketplace from their Atlassian host product.-->
+<!--        App logo         144x144px PNG/JPG-->
         <param name="plugin-logo">images/pluginLogo.png</param>
+
+        <!--        72x72px PNG/JPG/GIF (No animated GIFs) Reference a large, clear, front-facing image.
+         Your logo should be relevant to your vendor name. This appears on your vendor page in the Marketplace.       -->
+<!--        <param name="vendor-logo">images/vendorLogo.jpg</param>-->
+
+<!--        Vendor icon-->
+<!--        16x16px PNG/JPG/GIF (No animated GIFs)-->
+<!--        <param name="vendor-icon">images/vendorIcon.jpg</param>-->
+
     </plugin-info>
 
     <!-- add our i18n resource -->
