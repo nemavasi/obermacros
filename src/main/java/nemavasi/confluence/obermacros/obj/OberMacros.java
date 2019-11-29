@@ -116,7 +116,7 @@ public class OberMacros implements Macro, WithBaseModules {
             "END test.\n"
             ;
         }
-        body = getBaseModulesSourceText() + body;
+        //body = getBaseModulesSourceText() + body;
         result = result.replace("__MY_CODE__", body);
 
 //        Integer width, height;
