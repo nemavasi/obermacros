@@ -18,9 +18,9 @@
 <!--    Full-size: Illustrate your highlight with a screenshot. High-definition display screenshots encouraged.-->
 <!--    Cropped: Provide a cropped version of your screenshot. This image is displayed prominently on the app details page.-->
     <highlights>
-        <highlight image="images/03_highlight1_ss.jpg" cropped="images/04_highlight1_cropped.jpg"/>
-        <highlight image="images/05_highlight2_ss.jpg" cropped="images/06_highlight2_cropped.jpg"/>
-        <highlight image="images/07_highlight3_ss.jpg" cropped="images/08_highlight3_cropped.jpg"/>
+        <highlight image="images/03_highlight1_ss.png" cropped="images/04_highlight1_cropped.png"/>
+        <highlight image="images/05_highlight2_ss.png" cropped="images/06_highlight2_cropped.png"/>
+        <highlight image="images/07_highlight3_ss.png" cropped="images/08_highlight3_cropped.png"/>
     </highlights>
     <!-- Describe additional screenshots you'd like listed on your app listing. -->
 <!--    Additional screenshots-->
