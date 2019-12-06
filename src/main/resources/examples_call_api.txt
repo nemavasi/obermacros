@@ -1,0 +1,8 @@
+MODULE test;
+  IMPORT JS, Log;
+  VAR
+    x : ARRAY 100 OF CHAR;
+BEGIN
+  JS.do("var user; AJS.$.ajax({url: '/rest/gadget/1.0/currentUser', type: 'get', dataType: 'json', async: false, success: function(data) {user = data.username; }}); x = user;");
+  Log.String(x);
+END test.
