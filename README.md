@@ -1,4 +1,71 @@
-# Obermacros
+#Obermacros
+
+## Overview
+
+This plugin is designed to be embed dynamic models, process simulators, data visualizations and other tasks using
+Oberon-07 programming language in Confluence pages.
+Oberon-07 is a very beautiful and concise programming language, the syntax of which can be studied in a few days.
+This allows to quickly develop models and visualize models for non-professional programmers.
+Oberon-07 is the result of decades of work by Niklaus Wirth - a famous scientist, specialist in the computer science,
+and his assistants.
+
+All trademarks are the property of their respective owners.
+
+### Details
+
+In this plugin Oberon-07 code is compiled into JavaScript, which allows you to use it to create and visualize models
+directly on the page with other information. The author of the compiler is Vladislav Volts. He also offers other
+programming language Eberon, which you can use.
+
+#### Use cases.
+- teaching programming and algorithm to schoolchildren and students
+- creation of production simulators, warehouse, trade, physical and other processes
+- demonstration of algorithms and models in research
+- dynamic visualization of mathematical models and processes
+
+The main advantage of this plugin is that it is a very simple, but at the same time, powerful programming language,
+that allows you to focus on the current task, and not on the learning of syntax and many libraries.
+
+Access to a site with various models for the language of Oberon-07 here: <br>
+https://modela.online
+
+###Warning
+Warning!
+To save program code in Oberon-07 on the Confluence page, you must have permission to edit the page! Otherwise, the
+changes will not be saved! It is done so that no one could changes your model. But at the same time, users can change
+characteristics of the model and rerun the model.
+
+### Known Issues
+
+Only one obermacro works on the page.
+
+### Instruction
+A macro can be in any page.
+First you need to verify that the correct programming language is installed - Oberon-07 or Eberon.
+The "OPEN SOURCE CODE" panel is open by default - you can write your own code in it. Your code must contain the Init module.
+From your code, modules Math (mathematical operations), Strings (work with strings), Log (logging) and
+Draw (drawing) are available. Optionally, you can add your own modules. For example, this can be done simply by
+describing another module above the Init module.
+
+After writing the code, you need to start compiling the code using the "Compile" command. It will compile the code from
+Oberon-07 into Javascript. If the “OPEN COMPLEX CODE” panel is opened (it opens / closes by clicking), you can see the
+result of compilation into JavaScript. Work started by the "Run" command. You can immediately compile and run the code
+using the "Compile & Run" command.
+
+It’s easier to start learning using simple code examples on https://modela.online/.
+
+In order for your code to remain on an ongoing basis, you must have permission to edit the page.
+First, copy the code you want to save to the clipboard. Go into page editing mode.
+In the settings of the element of this macro, find the field for inserting the code. You can also write a comment
+in the macro.
+
+For extended help with Oberon-07 or other dialects of Oberon, refer to the source,
+available in the "OPEN HELP" menu (opens / closes by clicking) on ​​the page.
+
+Happy experiments!
+
+
+#Обермакрос
 
 ##Обзор 
 
@@ -60,8 +127,6 @@ JavaScript. Если при этом раскрыта панель "OPEN COMPILE
 
 Удачных экспериментов!
 
-##Overview
 
-Use cases:
 
-Major features:
+
