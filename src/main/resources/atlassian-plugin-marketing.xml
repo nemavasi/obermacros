@@ -29,8 +29,8 @@
 <!--    Copy-->
 
     <screenshots>
-        <screenshot image="images/09_addl_ss1.jpg"/>
-        <screenshot image="images/10_addl_ss2.jpg"/>
-        <screenshot image="images/11_addl_ss3.jpg"/>
+        <screenshot image="images/09_addl_ss1.png"/>
+        <!--<screenshot image="images/10_addl_ss2.jpg"/>-->
+        <!--<screenshot image="images/11_addl_ss3.jpg"/>-->
     </screenshots>
 </atlassian-plugin-marketing>
