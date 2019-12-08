@@ -132,6 +132,10 @@ END RectRounded;
 
 (* drawing with int args *)
 
+PROCEDURE Pointi*(x0, y0: INTEGER);
+BEGIN JS.do("Instance.point(x0,y0)")
+END Pointi;
+
 PROCEDURE Linei*(x0, y0, x1, y1: INTEGER);
 BEGIN JS.do("Instance.line(x0,y0,x1,y1);")
 END Linei;
