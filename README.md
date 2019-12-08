@@ -1,6 +1,6 @@
-#Obermacros
+##Obermacros
 
-## Overview
+### Overview
 
 This plugin is designed to be embed dynamic models, process simulators, data visualizations and other tasks using
 Oberon-07 programming language in Confluence pages.
@@ -11,13 +11,13 @@ and his assistants.
 
 All trademarks are the property of their respective owners.
 
-### Details
+#### Details
 
 In this plugin Oberon-07 code is compiled into JavaScript, which allows you to use it to create and visualize models
 directly on the page with other information. The author of the compiler is Vladislav Volts. He also offers other
 programming language Eberon, which you can use.
 
-#### Use cases.
+##### Use cases.
 - teaching programming and algorithm to schoolchildren and students
 - creation of production simulators, warehouse, trade, physical and other processes
 - demonstration of algorithms and models in research
@@ -29,17 +29,17 @@ that allows you to focus on the current task, and not on the learning of syntax 
 Access to a site with various models for the language of Oberon-07 here: <br>
 https://modela.online
 
-###Warning
+####Warning
 Warning!
 To save program code in Oberon-07 on the Confluence page, you must have permission to edit the page! Otherwise, the
 changes will not be saved! It is done so that no one could changes your model. But at the same time, users can change
 characteristics of the model and rerun the model.
 
-### Known Issues
+####Known Issues
 
 Only one obermacro works on the page.
 
-### Instruction
+####Instruction
 A macro can be in any page.
 First you need to verify that the correct programming language is installed - Oberon-07 or Eberon.
 The "OPEN SOURCE CODE" panel is open by default - you can write your own code in it. Your code must contain the Init module.
@@ -65,9 +65,9 @@ available in the "OPEN HELP" menu (opens / closes by clicking) on ​​the page
 Happy experiments!
 
 
-#Обермакрос
+##Обермакрос
 
-##Обзор 
+###Обзор 
 
 Данный плагин предназначен для встраивания в страницы Confluence динамических моделей, симуляторов процессов, визуализации 
 данных и моделей, написанных на языке программирования Оберон-07. 
@@ -78,12 +78,12 @@ Happy experiments!
  
 Все торговые марки принадлежат их законным владельцам
 
-###Детали
+##3#Детали
 
 В данном плагине код Оберон-07 компилируется в JavaScript, что позволяет использовать его для создания и визуализации моделей прямо на странице с другой информацией. 
 Автор компилятора - Vladislav Folts. Автор также предлагает свой язык программирования Eberon, который Вы также можете использовать.      
 
-####Варианты использования. 
+#####Варианты использования. 
   - обучение программированию и алгоритмам школьников и студентов
   - создание симуляторов производственных, складских, торговых, физических и других процессов  
   - демонстрация алгоритмов и моделей в исследованиях  
@@ -95,7 +95,7 @@ Happy experiments!
 Доступен сайт с различными моделями на языке Оберон-07.<br>
 https://modela.online
 
-###Предупреждение
+####Предупреждение
 Внимание! 
 Для сохранения кода программы на языке Oberon-07 на странице Confluence, необходимо иметь права на редактирование страницы 
 (и редактировать сам элемент макроса на странице)! В противном случае изменения не сохранятся! Это сделано для того, чтобы Вашу модель никто не изменил. Но при этом пользователи могут "поиграться" с моделью, меняя данные и код на временной основе.     
@@ -104,7 +104,7 @@ https://modela.online
 
 Не нужно добавлять более одного такого макроса на страницу - работает только один. 
 
-###Инструкция
+####Инструкция
 Макрос может быть в строен в любую страницу. 
 Сначала нужно проверить, что стоит нужный язык программирования - Oberon-07 или Eberon.
 Панель "OPEN SOURCE CODE" по умолчанию открыта - в ней можно писать свой код. Ваш код должен содержать модуль Init.
