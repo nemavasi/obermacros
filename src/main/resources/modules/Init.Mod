@@ -5,16 +5,9 @@ MODULE Init;
 IMPORT Log, D := Draw, Math, JS;
 
 VAR
-
   width, w, height, h, xmin, ymin, xmax, ymax, dx, dy, y, x, a, b, absOld, max, aa, bb, abs, diffToLast, diffToMax, twoab : REAL;
   maxiterations, j, i, n, convergeNumber, norm : INTEGER;
   break : BOOLEAN;
-
-PROCEDURE Map(value, istart, istop, ostart, ostop : INTEGER) : INTEGER;
-BEGIN
-    RETURN ostart + (ostop - ostart) * ((value - istart) DIV (istop - istart))
-END Map;
-
 
 PROCEDURE Do*;
 BEGIN
@@ -44,8 +37,6 @@ BEGIN
 
   y := ymin;
 
-
-
   FOR j := 0 TO FLOOR(height) BY 1 DO
     x := xmin;
 
@@ -61,22 +52,18 @@ BEGIN
 
       WHILE (n < maxiterations) & (break = FALSE)  DO
 
-
         aa := a * a;
-
         bb := b * b;
         abs := 0.1;
 
         abs := Math.Sqrt(aa + bb);
-
 
         IF (abs > max) THEN
           diffToLast := abs - absOld;
           diffToMax  := max - absOld;
           convergeNumber := n + FLOOR(diffToMax/diffToLast);
           break := TRUE;
-        END ;
-
+        END;
 
         IF break = FALSE THEN
           twoab := 2.0 * a * b;
@@ -86,9 +73,7 @@ BEGIN
           absOld := abs;
         END;
 
-
       END;
-
 
       IF n = maxiterations THEN
         D.NoFill;
@@ -96,21 +81,15 @@ BEGIN
         D.Pointi(i, j);
       ELSE
         norm := convergeNumber * 10 MOD 255;
-        (*norm := Map(convergeNumber, 0, maxiterations, 0, 1);*)
-        (*norm := Map(FLOOR(Math.Sqrt(FLT(norm))), 0, 1, 0, 255);        *)
          D.NoFill;
         D.Stroke(norm);
-        (* D.NoStroke; *)
         D.Pointi(i, j);
-
       END;
+
       x := x + dx;
     END;
     y := y + dy;
-
-
   END;
-
 END Do;
 
 BEGIN
