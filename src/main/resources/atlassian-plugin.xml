@@ -41,7 +41,7 @@
 
         <resource type="download" name="js/oc.js" location="js/oc.js"/>
 
-
+        <resource type="download" name="images/pluginLogo.jpg" location="images/pluginLogo.jpg"/>
 
         <resource type="download" name="js/codemirror/oberon07.js" location="js/codemirror/oberon07.js"/>
         <resource type="download" name="js/jslibs/codemirror/codemirror.css" location="js/jslibs/codemirror/codemirror.css"/>
@@ -68,8 +68,11 @@
 <!--        </parameters>-->
 <!--    </user-macro>-->
 
-    <xhtml-macro name="obermacros" class="nemavasi.confluence.obermacros.obj.OberMacros" key="ober-macro">
+
+
+    <xhtml-macro name="obermacros" class="nemavasi.confluence.obermacros.obj.OberMacros" key="ober-macro" icon="/download/resources/nemavasi.confluence.obermacros:obermacros-resources/images/pluginLogo.jpg">
         <description key="obermacros.description.desc">It enables creating Oberon-07 macro within Confluence</description>
+        <category name="visuals"/>
         <parameters>
             <parameter name="comment" type="string" />
 <!--            <parameter name="Color" type="enum">-->
