@@ -109,33 +109,16 @@ public class OberMacros implements Macro, WithBaseModules {
         result = result.replace("__ATLASSIAN_BASE_URL__", baseURL);
 
         if (body == null || body.trim().length() == 0) {
-            body =  "MODULE test; \n" +
-            "IMPORT JS;\n" +
-            "BEGIN\n" +
-            "JS.alert(\"Hello, World!\")\n" +
-            "END test.\n"
-            ;
+//            body =  "MODULE test; \n" +
+//            "IMPORT JS;\n" +
+//            "BEGIN\n" +
+//            "JS.alert(\"Hello, World!\")\n" +
+//            "END test.\n"
+//            ;
+
+            body = getExampleText();
         }
-        //body = getBaseModulesSourceText() + body;
         result = result.replace("__MY_CODE__", body);
-
-//        Integer width, height;
-//        try {
-//            width = Integer.valueOf(map.get("width"));
-//            height = Integer.valueOf(map.get("height"));
-//        } catch (NumberFormatException e) {
-//            throw new RuntimeException("wrong number!");
-//        }
-
-//        String output = "<div class =\"helloworld\">";
-//        output = output + "<div class = \"" + map.get("Color") + "\">";
-//        if (map.get("Name") != null) {
-//            output = output + ("<h1>Hello " + map.get("Name") + "!</h1>");
-//        } else {
-//            output = output + "<h1>Hello World!<h1>";
-//            output += "<br>" + conversionContext.;
-//        }
-//        output = output + "</div>" + "</div>";
         return result;
     }
 
@@ -149,44 +132,22 @@ public class OberMacros implements Macro, WithBaseModules {
         return OutputType.BLOCK;
     }
 
-    //    @Override
-//    public boolean hasBody() {
-//        return true;
-//    }
-//
-//    @Override
-//    public RenderMode getBodyRenderMode() {
-//        return null;
-//    }
-//
-//    @Override
-//    public String execute(Map map, String s, RenderContext renderContext) throws MacroException {
-//
-//        pageBuilderService.assembler().resources().requireWebResource("nemavasi.confluence.obermacros:ober-macro");
-//
-//        String output = "<div class =\"helloworld\">";
-//        output = output + "<div class = \"" + map.get("Color") + "\">";
-//        if (map.get("Name") != null) {
-//            output = output + ("<h1>Hello " + map.get("Name") + "!</h1>");
-//        } else {
-//            output = output + "<h1>Hello World!<h1>";
-//        }
-//        output = output + "</div>" + "</div>";
-//        return output;
-//    }
-//
-//    @Override
-//    public boolean suppressSurroundingTagDuringWysiwygRendering() {
-//        return false;
-//    }
-//
-//    @Override
-//    public boolean suppressMacroRenderingDuringWysiwyg() {
-//        return false;
-//    }
-//
-//    @Override
-//    public WysiwygBodyType getWysiwygBodyType() {
-//        return null;
-//    }
+    @Override
+    public String getExampleText(){
+        StringBuilder output = new StringBuilder();
+        InputStream modExample = OberMacros.class.getClassLoader().getResourceAsStream("modules/Init.Mod");
+
+        try (BufferedReader buffer = new BufferedReader(new InputStreamReader(modExample))) {
+            String strCurrentLine;
+            while ((strCurrentLine = buffer.readLine()) != null) {
+                output.append(strCurrentLine);
+                output.append("\n");
+            }
+            output.append("\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return output.toString();
+    }
 }
