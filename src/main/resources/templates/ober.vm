@@ -1,9 +1,4 @@
 
-                <script src="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/js/oc.js"></script>
-                <script src="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/js/jslibs/codemirror/codemirror.js"></script>
-                <script src="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/js/jslibs/codemirror/javascript.js"></script>
-                <script src="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/js/jslibs/processing/processing.js"></script>
-                <script src="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/js/codemirror/oberon07.js"></script>
 
                 <td style="padding-left: 7px; font-size: 12pt;" valign="top">
                     <div id="canvas"></div>
@@ -52,22 +47,18 @@
                 <p id="version"></p>
 
                 <script src="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/js/oc.js"></script>
+                <script src="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/js/jslibs/codemirror/codemirror.js"></script>
+                <script src="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/js/jslibs/codemirror/javascript.js"></script>
+                <script src="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/js/jslibs/processing/processing.js"></script>
+                <script src="__ATLASSIAN_BASE_URL__/download/resources/nemavasi.confluence.obermacros:obermacros-resources/js/codemirror/oberon07.js"></script>
 
                 <script>
-                    var oberonEditor = CodeMirror.fromTextArea(document.getElementById('source'), {
-                            lineNumbers: true,
-                            mode: "text/x-oberon07"
-                        });
-                    var javascriptEditor = CodeMirror.fromTextArea(document.getElementById('result'), {
-                        lineNumbers: true,
-                        mode: "text/javascript"
-                    });
 
                     if (typeof buildVersion != "undefined")
                         document.getElementById("version").textContent = buildVersion;
 
                     function compile(){
-                        var src = oberonEditor.getValue();
+                        var src = document.getElementById('source').value;
 
                         AJS.$.ajax({
                             type:   "get",
@@ -107,7 +98,7 @@
 
                         if (!result)
                             result = "";
-                        javascriptEditor.setValue(result);
+                        document.getElementById('result').value = result;
                         document.getElementById("compileErrors").textContent = errors;
                         document.getElementById("compileTime").textContent = "compile time (seconds): " + compileTime;
                             }
@@ -125,7 +116,7 @@
                             errElement.textContent = "";
                             timed_run(function(){
                                 try{
-                                    eval(javascriptEditor.getValue());
+                                    eval( document.getElementById('result').value);
                                 }
                                 catch (e){
                                     var errors = "" + e;
