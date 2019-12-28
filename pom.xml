@@ -187,7 +187,7 @@
     <atlassian.dev.mode>false</atlassian.dev.mode>
     <atlassian.webresource.disable.minification>true</atlassian.webresource.disable.minification>
 
-    <project.version>0.3.0-SNAPSHOT</project.version>
+    <project.version>0.3.1-SNAPSHOT</project.version>
     <project.description>This Plugin enables creating Oberon-07 macro within Confluence</project.description>
     <project.organization.name>Dmitry Shalygin</project.organization.name>
     <project.organization.url>https://online.oberon.org</project.organization.url>
