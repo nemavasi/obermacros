@@ -27,7 +27,7 @@ The main advantage of this plugin is that it is a very simple, but at the same t
 that allows you to focus on the current task, and not on the learning of syntax and many libraries.
 
 Access to a site with various models for the language of Oberon-07 here: <br>
-https://modela.online
+https://online.oberon.org
 
 #### Warning
 Warning!
@@ -52,7 +52,7 @@ Oberon-07 into Javascript. If the “OPEN COMPLEX CODE” panel is opened (it op
 result of compilation into JavaScript. Work started by the "Run" command. You can immediately compile and run the code
 using the "Compile & Run" command.
 
-It’s easier to start learning using simple code examples on https://modela.online/.
+It’s easier to start learning using simple code examples on https://online.oberon.org/.
 
 In order for your code to remain on an ongoing basis, you must have permission to edit the page.
 First, copy the code you want to save to the clipboard. Go into page editing mode.
@@ -93,7 +93,7 @@ Happy experiments!
 позволит сосредоточиться на решаемой задаче, а не на освоении синтаксиса и множества библиотек.  
 
 Доступен сайт с различными моделями на языке Оберон-07.<br>
-https://modela.online
+https://online.oberon.org
 
 #### Предупреждение
 Внимание! 

@@ -8,7 +8,7 @@
   <version>${project.version}</version>
   <organization>
     <name>Dmitry Shalygin</name>
-    <url>https://modela.online</url>
+    <url>https://online.oberon.org</url>
   </organization>
   <name>obermacros</name>
   <description>obermacros</description>
@@ -190,6 +190,6 @@
     <project.version>0.3.0-SNAPSHOT</project.version>
     <project.description>This Plugin enables creating Oberon-07 macro within Confluence</project.description>
     <project.organization.name>Dmitry Shalygin</project.organization.name>
-    <project.organization.url>https://modela.online</project.organization.url>
+    <project.organization.url>https://online.oberon.org</project.organization.url>
   </properties>
 </project>

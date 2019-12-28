@@ -2,7 +2,7 @@
 <atlassian-plugin-marketing>
     <!--Describe names and versions of compatible products -->
     <compatibility>
-        <product name="confluence" min="6.10.1" max="6.13.10"/>
+        <product name="confluence" min="6.5.3" max="6.15.10"/>
     </compatibility>
     <!-- Describe your app logo and banner. The banner is only displayed in the UPM. -->
     <!--    App logo    144x144px PNG/JPG Reference your app logo. Use transparent or bounded, chiclet-style backgrounds.

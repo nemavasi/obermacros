@@ -145,7 +145,7 @@
                     <p>
                         <a href="https://inf.ethz.ch/personal/wirth/Oberon/Oberon07.Report.pdf">eng (pdf)</a>
                         &nbsp; &nbsp;
-                        <a href="https://modela.online/oberon">rus</a>
+                        <a href="https://online.oberon.org/oberon">rus</a>
                     </p>
 
                     <br> About base modules: <br>
@@ -163,7 +163,7 @@
                     <p><a href="https://github.com/vladfolts/oberonjs">Compiler info: https://github.com/vladfolts/oberonjs</a></p>
 
                     <br> More models:  <br>
-                    <p><a href="https://modela.online">https://modela.online</a></p>
+                    <p><a href="https://online.oberon.org">https://online.oberon.org</a></p>
 
                     <br> Forums:  <br>
                     <p>
@@ -173,6 +173,7 @@
                     </p>
 
                     <br> Other links:  <br>
+                    <p><a href="https://online.oberon.org">https://oberon.org/</a></p>
                     <p><a href="http://www.ocp.inf.ethz.ch/wiki/">Oberon Community Platform</a></p>
                     <p><a href="https://oberoncore.ru/">https://oberoncore.ru/</a></p>
                     <p><a href="http://obertone.ru/">http://obertone.ru/</a></p>
